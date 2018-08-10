@@ -4,11 +4,13 @@
  * and open the template in the editor.
  */
 package com.example.demo;
-
+import org.springframework.data.repository.CrudRepository;
+import com.example.demo.User;
 /**
  *
  * @author Kimaiga
  */
-public class UserRepository {
+
+public interface UserRepository extends CrudRepository<User, Long> {
     
 }
